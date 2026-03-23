@@ -8,7 +8,10 @@ body {
 /* PORTADA */
 .hero {
   height: 100vh;
-  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('imagenes/Portada/Fondo3.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
