@@ -36,7 +36,7 @@ body {
 
 .hero h1 {
   font-size: 3rem;
-  font-family: 'Lobster', serif;
+  font-family: 'lobster', serif;
   background: linear-gradient(145deg, #ffffff, #888888);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ body {
 
 .slogan {
   font-size: 1.2rem;
-  font-family: 'Lobster', serif;
+  font-family: 'lobster', serif;
   color: #c0c0c0;
   margin-top: 10px;
 }
@@ -52,7 +52,7 @@ body {
 .btn {
   margin-top: 20px;
   padding: 10px 25px;
-  font-family: 'Lobster', serif;
+  font-family: 'lobster', serif;
   background: linear-gradient(145deg, #c0c0c0, #7a7a7a);
   color: black;
   text-decoration: none;
@@ -73,6 +73,45 @@ body {
   font-size: 2rem;
   font-weight: bold;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* 1 columna en pantallas pequeñas */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TARJETAS */
+.card {
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 5px 5px 15px #000;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 15px rgba(192,192,192,0.4);
+}
+
+.card img {
   width: 65%;
   border-radius: 10px;
 }
