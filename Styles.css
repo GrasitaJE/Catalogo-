@@ -60,9 +60,15 @@ body {
 }
 
 .catalogo h2 {
-  margin-top: 40px;
-  border-bottom: 2xpx solid #888;
-  padding-bottom: 5px;
+  margin: 40px 0;
+  padding: 20px 0;
+  background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 /* GRID */
