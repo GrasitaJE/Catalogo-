@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #0f0f0f, #1c1c1c, #2a2a2a);
+  background: #0f0f0f;
   color: #e5e5e5;
 }
 
@@ -36,7 +36,7 @@ body {
 
 .hero h1 {
   font-size: 3rem;
-  font-family: 'Cinzel', serif;
+  font-family: 'Lobster', serif;
   background: linear-gradient(145deg, #ffffff, #888888);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,26 +44,19 @@ body {
 
 .slogan {
   font-size: 1.2rem;
-  font-family: 'Cinzel', serif;
+  font-family: 'Lobster', serif;
   color: #c0c0c0;
   margin-top: 10px;
-  letter-spacing: 1px;
 }
 
 .btn {
   margin-top: 20px;
   padding: 10px 25px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Lobster', serif;
   background: linear-gradient(145deg, #c0c0c0, #7a7a7a);
   color: black;
   text-decoration: none;
   border-radius: 25px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(145deg, #ffffff, #b0b0b0);
 }
 
 /* CATÁLOGO */
@@ -72,7 +65,7 @@ body {
 }
 
 .catalogo h2 {
-  margin: 60px auto;
+  margin: 40px 0;
   padding: 20px 0;
   background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
   color: #ffffff;
@@ -81,36 +74,7 @@ body {
   font-weight: bold;
   border-radius: 10px;
   width: 65%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-/* TARJETAS (EFECTO GLASS 🔥) */
-.card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 15px;
-  text-align: center;
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(192,192,192,0.3);
-}
-
-.card img {
-  width: 100%;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
 .card button {
@@ -120,14 +84,6 @@ body {
   background: linear-gradient(145deg, #c0c0c0, #7a7a7a);
   border-radius: 20px;
   cursor: pointer;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: 0.3s;
-}
-
-.card button:hover {
-  background: linear-gradient(145deg, #ffffff, #b0b0b0);
-  transform: scale(1.05);
 }
 
 /* MODAL */
@@ -140,7 +96,6 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(5px);
 }
 
 .modal-content {
@@ -153,18 +108,6 @@ body {
   text-align: center;
   max-height: 80vh;
   overflow-y: auto;
-  animation: aparecer 0.3s ease;
-}
-
-@keyframes aparecer {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 .cerrar {
@@ -178,7 +121,6 @@ body {
   border-radius: 10px;
 }
 
-/* BOTONES DE IMAGEN */
 .image-container {
   position: relative;
   display: inline-block;
@@ -197,6 +139,14 @@ body {
   border-radius: 50%;
 }
 
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
 /* GALERÍA */
 .galeria {
   display: flex;
@@ -209,12 +159,10 @@ body {
   border-radius: 10px;
   cursor: pointer;
   opacity: 0.7;
-  transition: 0.3s;
 }
 
 .galeria img:hover {
   opacity: 1;
-  transform: scale(1.05);
 }
 
 /* BOTÓN MODAL */
@@ -225,16 +173,13 @@ body {
   background: linear-gradient(145deg, #c0c0c0, #7a7a7a);
   border-radius: 25px;
   cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-#btnComprar:hover {
-  background: linear-gradient(145deg, #ffffff, #b0b0b0);
-  transform: scale(1.05);
 }
 
 /* ANIMACIÓN */
+
+button::before {
+  height: 100%;
+}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
