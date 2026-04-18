@@ -1,4 +1,3 @@
-
 function comprar(producto) {
   let numero = "50251749515"; // TU NUMERO AQUI
   let mensaje = `Hola, quiero el ${producto}`;
@@ -74,17 +73,14 @@ function comprar(producto) {
   window.open(url, "_blank");
 }
 
-// Cerrar modal al hacer click en el fondo
-document.getElementById("modal").addEventListener('click', function(event) {
-  if (event.target === this) {
-    cerrarModal();
-  }
-});
-
-// Hacer las tarjetas clickeables
+// Hacer las tarjetas clickeables y eventos del modal
 document.addEventListener('DOMContentLoaded', function() {
+  // Hacer tarjetas clickeables
   document.querySelectorAll('.card').forEach(card => {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function(e) {
+      // No ejecutar si se clickea en el botón directamente
+      if (e.target.tagName === 'BUTTON') return;
+      
       const button = this.querySelector('button');
       if (button && button.onclick) {
         const onclickStr = button.getAttribute('onclick');
@@ -95,5 +91,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
+  });
+
+  // Cerrar modal al hacer click en el fondo
+  const modal = document.getElementById("modal");
+  modal.addEventListener('click', function(event) {
+    if (event.target === this) {
+      cerrarModal();
+    }
+  });
+
+  // Permitir cerrar con tecla Escape
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      cerrarModal();
+    }
   });
 });
