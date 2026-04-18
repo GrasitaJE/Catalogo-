@@ -1,458 +1,458 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grasita J&E</title>
-  <link rel="stylesheet" href="Styles.css">
-  <script src="script.js"></script>
-</head>
-<body>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasita J&E</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
 
-  <!-- PORTADA -->
-  <section class="hero fade-in">
-    <h1>LA GRASITA SHOP</h1>
-    <p class="slogan">Seleccionamos lo mejor. Tú solo decides destacar.</p>
-    <a href="#catalogo" class="btn">Ver colección</a>
-  </section>
+    <!-- PORTADA -->
+    <section class="hero fade-in">
+      <h1>LA GRASITA SHOP</h1>
+      <p class="slogan">Seleccionamos lo mejor. Tú solo decides destacar.</p>
+      <a href="#catalogo" class="btn">Ver colección</a>
+    </section>
 
-  <!-- MENÚ HORIZONTAL -->
-  <nav class="menu-horizontal">
-    <ul>
-      <li><a href="#hoodies">Hoodies</a></li>
-      <li><a href="#sueteres">Sueteres</a></li>
-      <li><a href="#pants">Pants</a></li>
-      <li><a href="#gorras">Gorras</a></li>
-      <li><a href="#gorros">Gorros</a></li>
-      <li><a href="#camisas">Camisas</a></li>
-      <li><a href="#calcetines">Calcetines</a></li>
-    </ul>
-  </nav>
+    <!-- MENÚ HORIZONTAL -->
+    <nav class="menu-horizontal">
+      <ul>
+        <li><a href="#hoodies">Hoodies</a></li>
+        <li><a href="#sueteres">Sueteres</a></li>
+        <li><a href="#pants">Pants</a></li>
+        <li><a href="#gorras">Gorras</a></li>
+        <li><a href="#gorros">Gorros</a></li>
+        <li><a href="#camisas">Camisas</a></li>
+        <li><a href="#calcetines">Calcetines</a></li>
+      </ul>
+    </nav>
 
-  <!-- SECCIÓN DESTACADA: ZAPATOS -->
-  <section class="destacado">
-    <h2>Zapatos Destacados</h2>
-    <img src="Imagenes/Portada/Zapatos.jpg" alt="Colección de Zapatos">
-    <div class="botones-comprar">
-      <button onclick="comprar('Nike Blazer Mid 77 Next Nature(Color Crema)')">Comprar Modelo 1 - Q150</button>
-      <button onclick="comprar('Adidas Campus (Color Gris)')">Comprar Modelo 2 - Q180</button>
-      <button onclick="comprar('Nike Court Legacy(Color Blanco y Rojo)')">Comprar Modelo 3 - Q200</button>
-    </div>
-  </section>
-
-  <!-- CATÁLOGO -->
-  <section id="catalogo" class="catalogo">
-    
-    <!-- HOODIES -->
-    <h2 id="hoodies">Hoodies</h2>
-    <div class="grid">
-
-      <div class="card fade-in">
-        <img src="Imagenes/Hodies/Hodie Champion Negro1.jpg">
-        <h3>Hoodie Champion Negro</h3>
-        <h4>Talla M</h4>
-        <p>Q160</p>
-        <button onclick="abrirModal('Hoodie Champion Negro','Q220',
-        ['Imagenes/Hodies/Hodie Champion Negro1.jpg','Imagenes/Hodies/Hodie Champion Negro2.jpg','Imagenes/Hodies/Hodie Champion Negro3.jpg'])">
-          Ver más
-        </button>
+    <!-- SECCIÓN DESTACADA: ZAPATOS -->
+    <section class="destacado">
+      <h2>Zapatos Destacados</h2>
+      <img src="Imagenes/Portada/Zapatos.jpg" alt="Colección de Zapatos">
+      <div class="botones-comprar">
+        <button onclick="comprar('Nike Blazer Mid 77 Next Nature(Color Crema)')">Comprar Modelo 1 - Q150</button>
+        <button onclick="comprar('Adidas Campus (Color Gris)')">Comprar Modelo 2 - Q180</button>
+        <button onclick="comprar('Nike Court Legacy(Color Blanco y Rojo)')">Comprar Modelo 3 - Q200</button>
       </div>
+    </section>
 
-            <div class="card fade-in">
-        <img src="Imagenes/Hodies/Hodie American Eagle Crema.jpg">
-        <h3>Hoodie American Eagle Crema</h3>
-        <h4>Talla M</h4>
-        <p>Q160</p>
-        <button onclick="abrirModal('Hoodie American Eagle Crema','Q160',
-        ['Imagenes/Hodies/Hodie American Eagle Crema.jpg','Imagenes/Hodies/Hodie American Eagle Crema2.jpg','Imagenes/Hodies/Hodie American Eagle Crema3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Hodies/Hodie Carhartt Verde1.jpg">
-        <h3>Hoodie Carhartt Verde</h3>
-        <h4>Talla S/M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Hoodie Carhartt Verde','Q150',
-        ['Imagenes/Hodies/Hodie Carhartt Verde1.jpg','Imagenes/Hodies/Hodie Carhartt Verde2.jpg','Imagenes/Hodies/Hodie Carhartt Verde3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-<div class="card fade-in">
-        <img src="Imagenes/Hodies/Hodie Puma Verde1.jpg">
-        <h3>Hoodie Puma Verde</h3>
-        <h4>Talla M</h4>
-        <p>Q160</p> 
-        <button onclick="abrirModal('Hoodie Puma Verde','Q160   ',
-        ['Imagenes/Hodies/Hodie Puma Verde1.jpg','Imagenes/Hodies/Hodie Puma Verde2.jpg','Imagenes/Hodies/Hodie Puma Verde3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-    </div>
-    <!-- Sueteres -->
-
-    <h2 id="sueteres">Sueteres</h2>
-    <div class="grid">
-
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter polo corinto1.jpg" alt="Sueter Polo Corinto">
-        <h3>Sueter Lacoste Corinto</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter Lacoste Corinto','Q150',
-        ['Imagenes/Sueteres/Sueter polo corinto1.jpg','Imagenes/Sueteres/Sueter polo corinto2.jpg','Imagenes/Sueteres/Sueter polo corinto3.jpg'])">
-          Ver más
-        </button>
-      </div>
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="catalogo">
       
-            <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter Polo Gris.jpg" alt="Sueter Polo Gris">
-        <h3>Sueter Polo Gris</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter Polo Gris','Q150',
-        ['Imagenes/Sueteres/Sueter Polo Gris.jpg','Imagenes/Sueteres/Sueter Polo Gris2.jpg','Imagenes/Sueteres/Sueter Polo Gris3.jpg'])">
-          Ver más
-        </button>
+      <!-- HOODIES -->
+      <h2 id="hoodies">Hoodies</h2>
+      <div class="grid">
+
+        <div class="card fade-in">
+          <img src="Imagenes/Hodies/Hodie Champion Negro1.jpg">
+          <h3>Hoodie Champion Negro</h3>
+          <h4>Talla M</h4>
+          <p>Q160</p>
+          <button onclick="abrirModal('Hoodie Champion Negro','Q220',
+          ['Imagenes/Hodies/Hodie Champion Negro1.jpg','Imagenes/Hodies/Hodie Champion Negro2.jpg','Imagenes/Hodies/Hodie Champion Negro3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+              <div class="card fade-in">
+          <img src="Imagenes/Hodies/Hodie American Eagle Crema.jpg">
+          <h3>Hoodie American Eagle Crema</h3>
+          <h4>Talla M</h4>
+          <p>Q160</p>
+          <button onclick="abrirModal('Hoodie American Eagle Crema','Q160',
+          ['Imagenes/Hodies/Hodie American Eagle Crema.jpg','Imagenes/Hodies/Hodie American Eagle Crema2.jpg','Imagenes/Hodies/Hodie American Eagle Crema3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Hodies/Hodie Carhartt Verde1.jpg">
+          <h3>Hoodie Carhartt Verde</h3>
+          <h4>Talla S/M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Hoodie Carhartt Verde','Q150',
+          ['Imagenes/Hodies/Hodie Carhartt Verde1.jpg','Imagenes/Hodies/Hodie Carhartt Verde2.jpg','Imagenes/Hodies/Hodie Carhartt Verde3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+  <div class="card fade-in">
+          <img src="Imagenes/Hodies/Hodie Puma Verde1.jpg">
+          <h3>Hoodie Puma Verde</h3>
+          <h4>Talla M</h4>
+          <p>Q160</p> 
+          <button onclick="abrirModal('Hoodie Puma Verde','Q160   ',
+          ['Imagenes/Hodies/Hodie Puma Verde1.jpg','Imagenes/Hodies/Hodie Puma Verde2.jpg','Imagenes/Hodies/Hodie Puma Verde3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
       </div>
+      <!-- Sueteres -->
 
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter Van Heusen Cafe1.jpg" alt="Sueter Van Heusen Cafe">
-        <h3>Sueter Van Heusen Cafe</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter Van Heusen Cafe','Q150',
-        ['Imagenes/Sueteres/Sueter Van Heusen Cafe1.jpg','Imagenes/Sueteres/Sueter Van Heusen Cafe2.jpg','Imagenes/Sueteres/Sueter Van Heusen Cafe3.jpg'])">
-          Ver más
-        </button>
-      </div>
+      <h2 id="sueteres">Sueteres</h2>
+      <div class="grid">
 
-            <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter Tomy Blanco.jpg" alt="Sueter Tomy Blanco">
-        <h3>Sueter Tomy Blanco</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter Tomy Blanco','Q150',
-        ['Imagenes/Sueteres/Sueter Tomy Blanco.jpg','Imagenes/Sueteres/Sueter Tomy Blanco2.jpg','Imagenes/Sueteres/Sueter Tomy Blanco3.jpg'])">
-          Ver más
-        </button>
-      </div>
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter polo corinto1.jpg" alt="Sueter Polo Corinto">
+          <h3>Sueter Lacoste Corinto</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter Lacoste Corinto','Q150',
+          ['Imagenes/Sueteres/Sueter polo corinto1.jpg','Imagenes/Sueteres/Sueter polo corinto2.jpg','Imagenes/Sueteres/Sueter polo corinto3.jpg'])">
+            Ver más
+          </button>
+        </div>
+        
+              <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter Polo Gris.jpg" alt="Sueter Polo Gris">
+          <h3>Sueter Polo Gris</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter Polo Gris','Q150',
+          ['Imagenes/Sueteres/Sueter Polo Gris.jpg','Imagenes/Sueteres/Sueter Polo Gris2.jpg','Imagenes/Sueteres/Sueter Polo Gris3.jpg'])">
+            Ver más
+          </button>
+        </div>
 
-          <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter Lacoste Gris1.jpg" alt="Sueter Lacoste Gris">
-        <h3>Sueter Lacoste Gris</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter Lacoste Gris','Q220',
-        ['Imagenes/Sueteres/Sueter Lacoste Gris1.jpg','Imagenes/Sueteres/Sueter Lacoste gris2.jpg','Imagenes/Sueteres/Sueter Lacoste Gris3.jpg'])">
-          Ver más
-        </button>
-      </div>
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter Van Heusen Cafe1.jpg" alt="Sueter Van Heusen Cafe">
+          <h3>Sueter Van Heusen Cafe</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter Van Heusen Cafe','Q150',
+          ['Imagenes/Sueteres/Sueter Van Heusen Cafe1.jpg','Imagenes/Sueteres/Sueter Van Heusen Cafe2.jpg','Imagenes/Sueteres/Sueter Van Heusen Cafe3.jpg'])">
+            Ver más
+          </button>
+        </div>
 
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Chumpa Columbia Verde1.jpg" alt="Chumpa Columbia Verde">
-        <h3>Chumpa Columbia Verde</h3>
-        <h4>Talla xs/s</h4>
-        <p>Q200</p>
-        <button onclick="abrirModal('Chumpa Columbia Verde','Q200',
-        ['Imagenes/Sueteres/Chumpa Columbia Verde1.jpg','Imagenes/Sueteres/Chumpa Columbia Verde2.jpg','Imagenes/Sueteres/Chumpa Columbia Verde3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-            <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Chumpa The Nort Face Negra1.jpg" alt="Chumpa The North Face Negra">
-        <h3>Chumpa The North Face Negra</h3>
-        <h4>Talla xs/s</h4>
-        <p>Q200</p>
-        <button onclick="abrirModal('Chumpa The North Face Negra','Q200',
-        ['Imagenes/Sueteres/Chumpa The Nort Face Negra1.jpg','Imagenes/Sueteres/Chumpa The Nort Face Negra2.jpg','Imagenes/Sueteres/Chumpa The Nort Face Negra3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-
-            <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Chumpa Dickies.jpg" alt="chumpa Dickies">
-        <h3>Chumpa Dickies</h3>
-        <h4>Talla XL</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Chumpa Dickies','Q150',
-        ['Imagenes/Sueteres/Chumpa Dickies.jpg','Imagenes/Sueteres/Chumpa Dickies negra2.jpg','Imagenes/Sueteres/Chumpa Dickies negra3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-                  <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter The North Face Gris-Rojo1.jpg" alt="Sueter The North Face Gris-Rojo">
-        <h3>Sueter The North Face Gris-Rojo</h3>
-        <h4>Talla XL</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter The North Face Gris-Rojo','Q150',
-        ['Imagenes/Sueteres/Sueter The North Face Gris-Rojo1.jpg','Imagenes/Sueteres/Sueter The North Face Gris-Rojo2.jpg','Imagenes/Sueteres/Sueter The North Face Gris-Rojo3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter Chicago1 .jpg" alt="Sueter chicago">
-        <h3>Sueter Chicago</h3>
-        <h4>Talla XL</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Sueter Chicago','Q150',
-        ['Imagenes/Sueteres/Sueter Chicago1 .jpg','Imagenes/Sueteres/Sueter chicago2.jpg','Imagenes/Sueteres/Sueter chicago3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Chumpa Lacoste Salmon1.jpg" alt="Chumpa Lacoste Salmon">
-        <h3>Chumpa Lacoste Salmon</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Chumpa Lacoste Salmon','Q150',
-        ['Imagenes/Sueteres/Chumpa Lacoste Salmon1.jpg','Imagenes/Sueteres/Chumpa Lacoste Salmon2.jpg','Imagenes/Sueteres/Chumpa Lacoste Salmon3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Chumpa Adidas Celeste1.jpg" alt="Chumpa Adidas Celeste">
-        <h3>AdiRunning</h3>
-        <h4>Talla M/L</h4>
-        <p>Q100</p>
-        <button onclick="abrirModal('Chumpa Adidas Celeste','Q150',
-        ['Imagenes/Sueteres/Chumpa Adidas Celeste1.jpg','Imagenes/Sueteres/Chumpa Adidas Celeste2.jpg','Imagenes/Sueteres/Chumpa Adidas Celeste3.jpg'])">
-          Ver más
-        </button>
-      </div>        
-
-      <div class="card fade-in">
-        <img src="Imagenes/Sueteres/Sueter The North Face Gris1.jpg" alt="Sueter The North Face">
-        <h3>Sueter The North Face</h3>
-        <h4>Talla M/L</h4>
-        <p>Q120</p>
-        <button onclick="abrirModal('Sueter The North Face','Q120',
-        ['Imagenes/Sueteres/Sueter The North Face Gris1.jpg','Imagenes/Sueteres/Sueter The North Face Gris2.jpg','Imagenes/Sueteres/Sueter The North Face Gris3.jpg'])">
-          Ver más
-        </button>
-      </div>
-    </div>
-
-    
-
-    <!-- PANTS -->
-    <h2 id="pants">Pants</h2>
-    <div class="grid">
+              <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter Tomy Blanco.jpg" alt="Sueter Tomy Blanco">
+          <h3>Sueter Tomy Blanco</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter Tomy Blanco','Q150',
+          ['Imagenes/Sueteres/Sueter Tomy Blanco.jpg','Imagenes/Sueteres/Sueter Tomy Blanco2.jpg','Imagenes/Sueteres/Sueter Tomy Blanco3.jpg'])">
+            Ver más
+          </button>
+        </div>
 
             <div class="card fade-in">
-        <img src="Imagenes/Pants/Pants Old Navy1.jpg">
-        <h3>Pants Old Navy</h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Pants Old Navy','Q150',
-        ['Imagenes/Pants/Pants Old Navy1.jpg','Imagenes/Pants/Pants Old Navy2.jpg','Imagenes/Pants/Pants Old Navy3.jpg'])">
-          Ver más
-        </button>
+          <img src="Imagenes/Sueteres/Sueter Lacoste Gris1.jpg" alt="Sueter Lacoste Gris">
+          <h3>Sueter Lacoste Gris</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter Lacoste Gris','Q220',
+          ['Imagenes/Sueteres/Sueter Lacoste Gris1.jpg','Imagenes/Sueteres/Sueter Lacoste gris2.jpg','Imagenes/Sueteres/Sueter Lacoste Gris3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Chumpa Columbia Verde1.jpg" alt="Chumpa Columbia Verde">
+          <h3>Chumpa Columbia Verde</h3>
+          <h4>Talla xs/s</h4>
+          <p>Q200</p>
+          <button onclick="abrirModal('Chumpa Columbia Verde','Q200',
+          ['Imagenes/Sueteres/Chumpa Columbia Verde1.jpg','Imagenes/Sueteres/Chumpa Columbia Verde2.jpg','Imagenes/Sueteres/Chumpa Columbia Verde3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+              <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Chumpa The Nort Face Negra1.jpg" alt="Chumpa The North Face Negra">
+          <h3>Chumpa The North Face Negra</h3>
+          <h4>Talla xs/s</h4>
+          <p>Q200</p>
+          <button onclick="abrirModal('Chumpa The North Face Negra','Q200',
+          ['Imagenes/Sueteres/Chumpa The Nort Face Negra1.jpg','Imagenes/Sueteres/Chumpa The Nort Face Negra2.jpg','Imagenes/Sueteres/Chumpa The Nort Face Negra3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+
+              <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Chumpa Dickies.jpg" alt="chumpa Dickies">
+          <h3>Chumpa Dickies</h3>
+          <h4>Talla XL</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Chumpa Dickies','Q150',
+          ['Imagenes/Sueteres/Chumpa Dickies.jpg','Imagenes/Sueteres/Chumpa Dickies negra2.jpg','Imagenes/Sueteres/Chumpa Dickies negra3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+                    <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter The North Face Gris-Rojo1.jpg" alt="Sueter The North Face Gris-Rojo">
+          <h3>Sueter The North Face Gris-Rojo</h3>
+          <h4>Talla XL</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter The North Face Gris-Rojo','Q150',
+          ['Imagenes/Sueteres/Sueter The North Face Gris-Rojo1.jpg','Imagenes/Sueteres/Sueter The North Face Gris-Rojo2.jpg','Imagenes/Sueteres/Sueter The North Face Gris-Rojo3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter Chicago1 .jpg" alt="Sueter chicago">
+          <h3>Sueter Chicago</h3>
+          <h4>Talla XL</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Sueter Chicago','Q150',
+          ['Imagenes/Sueteres/Sueter Chicago1 .jpg','Imagenes/Sueteres/Sueter chicago2.jpg','Imagenes/Sueteres/Sueter chicago3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Chumpa Lacoste Salmon1.jpg" alt="Chumpa Lacoste Salmon">
+          <h3>Chumpa Lacoste Salmon</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Chumpa Lacoste Salmon','Q150',
+          ['Imagenes/Sueteres/Chumpa Lacoste Salmon1.jpg','Imagenes/Sueteres/Chumpa Lacoste Salmon2.jpg','Imagenes/Sueteres/Chumpa Lacoste Salmon3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Chumpa Adidas Celeste1.jpg" alt="Chumpa Adidas Celeste">
+          <h3>AdiRunning</h3>
+          <h4>Talla M/L</h4>
+          <p>Q100</p>
+          <button onclick="abrirModal('Chumpa Adidas Celeste','Q150',
+          ['Imagenes/Sueteres/Chumpa Adidas Celeste1.jpg','Imagenes/Sueteres/Chumpa Adidas Celeste2.jpg','Imagenes/Sueteres/Chumpa Adidas Celeste3.jpg'])">
+            Ver más
+          </button>
+        </div>        
+
+        <div class="card fade-in">
+          <img src="Imagenes/Sueteres/Sueter The North Face Gris1.jpg" alt="Sueter The North Face">
+          <h3>Sueter The North Face</h3>
+          <h4>Talla M/L</h4>
+          <p>Q120</p>
+          <button onclick="abrirModal('Sueter The North Face','Q120',
+          ['Imagenes/Sueteres/Sueter The North Face Gris1.jpg','Imagenes/Sueteres/Sueter The North Face Gris2.jpg','Imagenes/Sueteres/Sueter The North Face Gris3.jpg'])">
+            Ver más
+          </button>
+        </div>
       </div>
 
-      <div class="card fade-in">
-        <img src="Imagenes/Pants/pants deportivo Al in Motion Negro1.jpg">
-        <h3>Pants Deportivo Al In Motion </h3>
-        <h4>Talla M</h4>
-        <p>Q150</p>
-        <button onclick="abrirModal('Motion Fit Pants','Q180',
-        ['Imagenes/Pants/pants deportivo Al in Motion Negro1.jpg','Imagenes/Pants/Pants Deportivo Al In Motion Negro2.jpg','Imagenes/Pants/Pants Deportivo Al In Motion Negro3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Pants/Pants´s White Fox1.jpg">
-        <h3>Pants´s White Fox</h3>
-        <h4>Talla L</h4>
-        <p>Q160 c/u</p>
-        <button onclick="abrirModal('Motion Fit Pants','Q180',
-        ['Imagenes/Pants/Pants´s White Fox1.jpg','Imagenes/Pants/Pants´s White Fox2.jpg','Imagenes/Pants/Pants´s White Fox3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Pants/Pants Champion Negro1.jpg">
-        <h3>Pants Champion Negro</h3>
-        <h4>Talla M</h4>
-        <p>Q160</p>
-        <button onclick="abrirModal('Pants Champion Negro','Q160',
-        ['Imagenes/Pants/Pants Champion Negro1.jpg','Imagenes/Pants/Pants Champion Negro2.jpg','Imagenes/Hodies/Hodie Champion Negro3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-    </div>
-
-    <!-- GORRAS -->
-    <h2 id="gorras">Gorras</h2>
-    <div class="grid">
-
-    </div>
-
-    <!-- GORROS (BEANIES) -->
-    <h2 id="gorros">Gorros (Beanies)</h2>
-    <div class="grid">
-
-      <div class="card fade-in">
-        <img src="Imagenes/Gorros/Gorro Carhartt Crema1.jpg">
-        <h3>Gorro Carhartt Crema</h3>
-        <h4>One Size</h4>
-        <p>Q60</p>
-        <button onclick="abrirModal('Gorro Carhartt Crema','Q60',
-        ['Imagenes/Gorros/Gorro Carhartt Crema1.jpg','Imagenes/Gorros/Gorro Carhartt Crema2.jpg','Imagenes/Gorros/Gorro Carhartt Crema3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-            <div class="card fade-in">
-        <img src="Imagenes/Gorros/Gorro Calvin Clein Reversible1.jpg">
-        <h3>Gorro Calvin Klein Reversible</h3>
-        <h4>One Size</h4>
-        <p>Q60</p>
-        <button onclick="abrirModal('Gorro Calvin Klein Reversible','Q60',
-        ['Imagenes/Gorros/Gorro Calvin Clein Reversible1.jpg','Imagenes/Gorros/Gorro Calvin Clein Reversible2.jpg','Imagenes/Gorros/Gorro Calvin Clein Reversible3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-            <div class="card fade-in">
-        <img src="Imagenes/Gorros/Gorro HOKA Azul1.jpg">
-        <h3>Gorro HOKA Azul</h3>
-        <h4>One Size</h4>
-        <p>Q60</p>
-        <button onclick="abrirModal('Gorro HOKA Azul','Q60',
-        ['Imagenes/Gorros/Gorro HOKA Azul1.jpg','Imagenes/Gorros/Gorro HOKA azul2.jpg','Imagenes/Gorros/Gorro HOKA azul3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-    </div>
-
-    <!-- CAMISAS -->
-    <h2 id="camisas">Camisas</h2>
-    <div class="grid">
-
-      <div class="card fade-in">
-        <img src="Imagenes/Camisas/Camisa Nike Rosada1.jpg">
-        <h3>Camisa Nike Rosada</h3>
-        <h4>Talla XL</h4>
-        <p>Q65</p>
-        <button onclick="abrirModal('Camisa Nike Rosada','Q65',
-        ['Imagenes/Camisas/Camisa Nike Rosada1.jpg','Imagenes/Camisas/Camisa Nike Rosada2.jpg','Imagenes/Camisas/Camisa Nike Rosada3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Camisas/Camisa Nike Morada1.jpg">
-        <h3>Camisa Nike Morada</h3>
-        <h4>Talla M/L</h4>
-        <p>Q65</p>
-        <button onclick="abrirModal('Camisa Nike Morada','Q65',
-        ['Imagenes/Camisas/Camisa Nike Morada1.jpg','Imagenes/Camisas/Camisa Nike Morada2.jpg','Imagenes/Camisas/Camisa Nike Morada3.jpg'])">
-          Ver más
-        </button>
-      </div>      
-
-    </div>
-
-
-    <!-- CALCETINES -->
-    <h2 id="calcetines">Calcetines</h2>
-    <div class="grid">
-
-      <div class="card fade-in">
-        <img src="Imagenes/Calcetines/Calcetines Bombas Negros1.jpg">
-        <h3>Calcetines Bombas Negros</h3>
-        <h4>Medio altos</h4>
-        <p>Q35</p>
-        <button onclick="abrirModal('Calcetines Bombas Negros','Q35',
-        ['Imagenes/Calcetines/Calcetines Bombas Negros1.jpg','Imagenes/Calcetines/Calcetines Bombas Negros2.jpg','Imagenes/Calcetines/Calcetines Bombas Negros3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Calcetines/Calcetines Bombas Rojos1.jpg">
-        <h3>Calcetines Bombas X Elmo</h3>
-        <h4>Medio altos</h4>
-        <p>Q35</p>
-        <button onclick="abrirModal('Calcetines Bombas Rojos','Q35',
-        ['Imagenes/Calcetines/Calcetines Bombas Rojos1.jpg','Imagenes/Calcetines/Calcetines Bombas Rojos2.jpg','Imagenes/Calcetines/Calcetines Bombas Rojos3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Calcetines/Calcetines Nike Grices1.jpg ">
-        <h3>Calcetines Nike Grices</h3>
-        <h4>Bajos</h4>
-        <p>Q35</p>
-        <button onclick="abrirModal('Calcetines Nike Grices','Q35',
-        ['Imagenes/Calcetines/Calcetines Nike Grices1.jpg','Imagenes/Calcetines/Calcetines Nike Grices2.jpg','Imagenes/Calcetines/Calcetines Nike Grices3.jpg'])">
-          Ver más
-        </button>
-      </div>
-
-      <div class="card fade-in">
-        <img src="Imagenes/Calcetines/Calcetines Reebok Negros1.jpg">
-        <h3>Calcetines Reebok Negros</h3>
-        <h4>Medio altos</h4>
-        <p>Q35</p>
-        <button onclick="abrirModal('Calcetines Reebok Negros','Q35',
-        ['Imagenes/Calcetines/Calcetines Reebok Negros1.jpg','Imagenes/Calcetines/Calcetines Reebok Negros2.jpg','Imagenes/Calcetines/Calcetines Reebok Negros3.jpg'])">
-          Ver más
-        </button>
-      </div>
       
-      <div class="card fade-in">
-        <img src="Imagenes/Calcetines/Calcetines Under Armor Negros1.jpg">
-        <h3>Calcetines Under Armor Negros</h3>
-        <h4>Medio altos</h4>
-        <p>Q35</p>
-        <button onclick="abrirModal('Calcetines Under Armor Negros','Q35',
-        ['Imagenes/Calcetines/Calcetines Under Armor Negros1.jpg','Imagenes/Calcetines/Calcetines Under Armor Negros2.jpg','Imagenes/Calcetines/Calcetines Under Armor Negros3.jpg'])">
-          Ver más
-        </button>
-      </div>      
 
-    </div>
+      <!-- PANTS -->
+      <h2 id="pants">Pants</h2>
+      <div class="grid">
 
-  </section>
+              <div class="card fade-in">
+          <img src="Imagenes/Pants/Pants Old Navy1.jpg">
+          <h3>Pants Old Navy</h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Pants Old Navy','Q150',
+          ['Imagenes/Pants/Pants Old Navy1.jpg','Imagenes/Pants/Pants Old Navy2.jpg','Imagenes/Pants/Pants Old Navy3.jpg'])">
+            Ver más
+          </button>
+        </div>
 
-  <!-- MODAL -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
+        <div class="card fade-in">
+          <img src="Imagenes/Pants/pants deportivo Al in Motion Negro1.jpg">
+          <h3>Pants Deportivo Al In Motion </h3>
+          <h4>Talla M</h4>
+          <p>Q150</p>
+          <button onclick="abrirModal('Motion Fit Pants','Q180',
+          ['Imagenes/Pants/pants deportivo Al in Motion Negro1.jpg','Imagenes/Pants/Pants Deportivo Al In Motion Negro2.jpg','Imagenes/Pants/Pants Deportivo Al In Motion Negro3.jpg'])">
+            Ver más
+          </button>
+        </div>
 
-      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <div class="card fade-in">
+          <img src="Imagenes/Pants/Pants´s White Fox1.jpg">
+          <h3>Pants´s White Fox</h3>
+          <h4>Talla L</h4>
+          <p>Q160 c/u</p>
+          <button onclick="abrirModal('Motion Fit Pants','Q180',
+          ['Imagenes/Pants/Pants´s White Fox1.jpg','Imagenes/Pants/Pants´s White Fox2.jpg','Imagenes/Pants/Pants´s White Fox3.jpg'])">
+            Ver más
+          </button>
+        </div>
 
-      <div class="mage-container">
-        <button id="prevBtn" class="nav-btn">&lt;</button>
-        <img id="imgPrincipal" class="img-principal">
-        <button id="nextBtn" class="nav-btn">&gt;</button>
+        <div class="card fade-in">
+          <img src="Imagenes/Pants/Pants Champion Negro1.jpg">
+          <h3>Pants Champion Negro</h3>
+          <h4>Talla M</h4>
+          <p>Q160</p>
+          <button onclick="abrirModal('Pants Champion Negro','Q160',
+          ['Imagenes/Pants/Pants Champion Negro1.jpg','Imagenes/Pants/Pants Champion Negro2.jpg','Imagenes/Hodies/Hodie Champion Negro3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
       </div>
 
-      <div id="galeria" class="galeria"></div>
+      <!-- GORRAS -->
+      <h2 id="gorras">Gorras</h2>
+      <div class="grid">
 
-      <h2 id="nombreProducto"></h2>
-      <p id="precioProducto"></p>
+      </div>
 
-      <button id="btnComprar">Comprar</button>
+      <!-- GORROS (BEANIES) -->
+      <h2 id="gorros">Gorros (Beanies)</h2>
+      <div class="grid">
 
+        <div class="card fade-in">
+          <img src="Imagenes/Gorros/Gorro Carhartt Crema1.jpg">
+          <h3>Gorro Carhartt Crema</h3>
+          <h4>One Size</h4>
+          <p>Q60</p>
+          <button onclick="abrirModal('Gorro Carhartt Crema','Q60',
+          ['Imagenes/Gorros/Gorro Carhartt Crema1.jpg','Imagenes/Gorros/Gorro Carhartt Crema2.jpg','Imagenes/Gorros/Gorro Carhartt Crema3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+              <div class="card fade-in">
+          <img src="Imagenes/Gorros/Gorro Calvin Clein Reversible1.jpg">
+          <h3>Gorro Calvin Klein Reversible</h3>
+          <h4>One Size</h4>
+          <p>Q60</p>
+          <button onclick="abrirModal('Gorro Calvin Klein Reversible','Q60',
+          ['Imagenes/Gorros/Gorro Calvin Clein Reversible1.jpg','Imagenes/Gorros/Gorro Calvin Clein Reversible2.jpg','Imagenes/Gorros/Gorro Calvin Clein Reversible3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+              <div class="card fade-in">
+          <img src="Imagenes/Gorros/Gorro HOKA Azul1.jpg">
+          <h3>Gorro HOKA Azul</h3>
+          <h4>One Size</h4>
+          <p>Q60</p>
+          <button onclick="abrirModal('Gorro HOKA Azul','Q60',
+          ['Imagenes/Gorros/Gorro HOKA Azul1.jpg','Imagenes/Gorros/Gorro HOKA azul2.jpg','Imagenes/Gorros/Gorro HOKA azul3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+      </div>
+
+      <!-- CAMISAS -->
+      <h2 id="camisas">Camisas</h2>
+      <div class="grid">
+
+        <div class="card fade-in">
+          <img src="Imagenes/Camisas/Camisa Nike Rosada1.jpg">
+          <h3>Camisa Nike Rosada</h3>
+          <h4>Talla XL</h4>
+          <p>Q65</p>
+          <button onclick="abrirModal('Camisa Nike Rosada','Q65',
+          ['Imagenes/Camisas/Camisa Nike Rosada1.jpg','Imagenes/Camisas/Camisa Nike Rosada2.jpg','Imagenes/Camisas/Camisa Nike Rosada3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Camisas/Camisa Nike Morada1.jpg">
+          <h3>Camisa Nike Morada</h3>
+          <h4>Talla M/L</h4>
+          <p>Q65</p>
+          <button onclick="abrirModal('Camisa Nike Morada','Q65',
+          ['Imagenes/Camisas/Camisa Nike Morada1.jpg','Imagenes/Camisas/Camisa Nike Morada2.jpg','Imagenes/Camisas/Camisa Nike Morada3.jpg'])">
+            Ver más
+          </button>
+        </div>      
+
+      </div>
+
+
+      <!-- CALCETINES -->
+      <h2 id="calcetines">Calcetines</h2>
+      <div class="grid">
+
+        <div class="card fade-in">
+          <img src="Imagenes/Calcetines/Calcetines Bombas Negros1.jpg">
+          <h3>Calcetines Bombas Negros</h3>
+          <h4>Medio altos</h4>
+          <p>Q35</p>
+          <button onclick="abrirModal('Calcetines Bombas Negros','Q35',
+          ['Imagenes/Calcetines/Calcetines Bombas Negros1.jpg','Imagenes/Calcetines/Calcetines Bombas Negros2.jpg','Imagenes/Calcetines/Calcetines Bombas Negros3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Calcetines/Calcetines Bombas Rojos1.jpg">
+          <h3>Calcetines Bombas X Elmo</h3>
+          <h4>Medio altos</h4>
+          <p>Q35</p>
+          <button onclick="abrirModal('Calcetines Bombas Rojos','Q35',
+          ['Imagenes/Calcetines/Calcetines Bombas Rojos1.jpg','Imagenes/Calcetines/Calcetines Bombas Rojos2.jpg','Imagenes/Calcetines/Calcetines Bombas Rojos3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Calcetines/Calcetines Nike Grices1.jpg ">
+          <h3>Calcetines Nike Grices</h3>
+          <h4>Bajos</h4>
+          <p>Q35</p>
+          <button onclick="abrirModal('Calcetines Nike Grices','Q35',
+          ['Imagenes/Calcetines/Calcetines Nike Grices1.jpg','Imagenes/Calcetines/Calcetines Nike Grices2.jpg','Imagenes/Calcetines/Calcetines Nike Grices3.jpg'])">
+            Ver más
+          </button>
+        </div>
+
+        <div class="card fade-in">
+          <img src="Imagenes/Calcetines/Calcetines Reebok Negros1.jpg">
+          <h3>Calcetines Reebok Negros</h3>
+          <h4>Medio altos</h4>
+          <p>Q35</p>
+          <button onclick="abrirModal('Calcetines Reebok Negros','Q35',
+          ['Imagenes/Calcetines/Calcetines Reebok Negros1.jpg','Imagenes/Calcetines/Calcetines Reebok Negros2.jpg','Imagenes/Calcetines/Calcetines Reebok Negros3.jpg'])">
+            Ver más
+          </button>
+        </div>
+        
+        <div class="card fade-in">
+          <img src="Imagenes/Calcetines/Calcetines Under Armor Negros1.jpg">
+          <h3>Calcetines Under Armor Negros</h3>
+          <h4>Medio altos</h4>
+          <p>Q35</p>
+          <button onclick="abrirModal('Calcetines Under Armor Negros','Q35',
+          ['Imagenes/Calcetines/Calcetines Under Armor Negros1.jpg','Imagenes/Calcetines/Calcetines Under Armor Negros2.jpg','Imagenes/Calcetines/Calcetines Under Armor Negros3.jpg'])">
+            Ver más
+          </button>
+        </div>      
+
+      </div>
+
+    </section>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+
+        <div class="mage-container">
+          <button id="prevBtn" class="nav-btn">&lt;</button>
+          <img id="imgPrincipal" class="img-principal">
+          <button id="nextBtn" class="nav-btn">&gt;</button>
+        </div>
+
+        <div id="galeria" class="galeria"></div>
+
+        <h2 id="nombreProducto"></h2>
+        <p id="precioProducto"></p>
+
+        <button id="btnComprar">Comprar</button>
+
+      </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <script src="script.js"></script>
+  </body>
+  </html>
