@@ -1,3 +1,4 @@
+
 function comprar(producto) {
   let numero = "50251749515"; // TU NUMERO AQUI
   let mensaje = `Hola, quiero el ${producto}`;
@@ -72,3 +73,27 @@ function comprar(producto) {
 
   window.open(url, "_blank");
 }
+
+// Cerrar modal al hacer click en el fondo
+document.getElementById("modal").addEventListener('click', function(event) {
+  if (event.target === this) {
+    cerrarModal();
+  }
+});
+
+// Hacer las tarjetas clickeables
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+      const button = this.querySelector('button');
+      if (button && button.onclick) {
+        const onclickStr = button.getAttribute('onclick');
+        const match = onclickStr.match(/abrirModal\((.+)\)/);
+        if (match) {
+          const argsStr = match[1];
+          eval('abrirModal(' + argsStr + ')');
+        }
+      }
+    });
+  });
+});
