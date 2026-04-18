@@ -16,11 +16,35 @@
     <a href="#catalogo" class="btn">Ver colección</a>
   </section>
 
+  <!-- MENÚ HORIZONTAL -->
+  <nav class="menu-horizontal">
+    <ul>
+      <li><a href="#hoodies">Hoodies</a></li>
+      <li><a href="#sueteres">Sueteres</a></li>
+      <li><a href="#pants">Pants</a></li>
+      <li><a href="#gorras">Gorras</a></li>
+      <li><a href="#gorros">Gorros</a></li>
+      <li><a href="#camisas">Camisas</a></li>
+      <li><a href="#calcetines">Calcetines</a></li>
+    </ul>
+  </nav>
+
+  <!-- SECCIÓN DESTACADA: ZAPATOS -->
+  <section class="destacado">
+    <h2>Zapatos Destacados</h2>
+    <img src="Imagenes/Portada/Zapatos.jpg" alt="Colección de Zapatos">
+    <div class="botones-comprar">
+      <button onclick="comprar('Nike Blazer Mid 77 Next Nature(Color Crema)')">Comprar Modelo 1 - Q150</button>
+      <button onclick="comprar('Adidas Campus (Color Gris)')">Comprar Modelo 2 - Q180</button>
+      <button onclick="comprar('Nike Court Legacy(Color Blanco y Rojo)')">Comprar Modelo 3 - Q200</button>
+    </div>
+  </section>
+
   <!-- CATÁLOGO -->
   <section id="catalogo" class="catalogo">
     
     <!-- HOODIES -->
-    <h2>Hoodies</h2>
+    <h2 id="hoodies">Hoodies</h2>
     <div class="grid">
 
       <div class="card fade-in">
@@ -30,6 +54,17 @@
         <p>Q160</p>
         <button onclick="abrirModal('Hoodie Champion Negro','Q220',
         ['Imagenes/Hodies/Hodie Champion Negro1.jpg','Imagenes/Hodies/Hodie Champion Negro2.jpg','Imagenes/Hodies/Hodie Champion Negro3.jpg'])">
+          Ver más
+        </button>
+      </div>
+
+            <div class="card fade-in">
+        <img src="Imagenes/Hodies/Hodie American Eagle Crema.jpg">
+        <h3>Hoodie American Eagle Crema</h3>
+        <h4>Talla M</h4>
+        <p>Q160</p>
+        <button onclick="abrirModal('Hoodie American Eagle Crema','Q160',
+        ['Imagenes/Hodies/Hodie American Eagle Crema.jpg','Imagenes/Hodies/Hodie American Eagle Crema2.jpg','Imagenes/Hodies/Hodie American Eagle Crema3.jpg'])">
           Ver más
         </button>
       </div>
@@ -59,7 +94,7 @@
     </div>
     <!-- Sueteres -->
 
-    <h2>Sueteres</h2>
+    <h2 id="sueteres">Sueteres</h2>
     <div class="grid">
 
       <div class="card fade-in">
@@ -72,6 +107,17 @@
           Ver más
         </button>
       </div>
+      
+            <div class="card fade-in">
+        <img src="Imagenes/Sueteres/Sueter Polo Gris.jpg" alt="Sueter Polo Gris">
+        <h3>Sueter Polo Gris</h3>
+        <h4>Talla M</h4>
+        <p>Q150</p>
+        <button onclick="abrirModal('Sueter Polo Gris','Q150',
+        ['Imagenes/Sueteres/Sueter Polo Gris.jpg','Imagenes/Sueteres/Sueter Polo Gris2.jpg','Imagenes/Sueteres/Sueter Polo Gris3.jpg'])">
+          Ver más
+        </button>
+      </div>
 
       <div class="card fade-in">
         <img src="Imagenes/Sueteres/Sueter Van Heusen Cafe1.jpg" alt="Sueter Van Heusen Cafe">
@@ -80,6 +126,17 @@
         <p>Q150</p>
         <button onclick="abrirModal('Sueter Van Heusen Cafe','Q150',
         ['Imagenes/Sueteres/Sueter Van Heusen Cafe1.jpg','Imagenes/Sueteres/Sueter Van Heusen Cafe2.jpg','Imagenes/Sueteres/Sueter Van Heusen Cafe3.jpg'])">
+          Ver más
+        </button>
+      </div>
+
+            <div class="card fade-in">
+        <img src="Imagenes/Sueteres/Sueter Tomy Blanco.jpg" alt="Sueter Tomy Blanco">
+        <h3>Sueter Tomy Blanco</h3>
+        <h4>Talla M</h4>
+        <p>Q150</p>
+        <button onclick="abrirModal('Sueter Tomy Blanco','Q150',
+        ['Imagenes/Sueteres/Sueter Tomy Blanco.jpg','Imagenes/Sueteres/Sueter Tomy Blanco2.jpg','Imagenes/Sueteres/Sueter Tomy Blanco3.jpg'])">
           Ver más
         </button>
       </div>
@@ -107,12 +164,35 @@
       </div>
 
             <div class="card fade-in">
+        <img src="Imagenes/Sueteres/Chumpa The Nort Face Negra1.jpg" alt="Chumpa The North Face Negra">
+        <h3>Chumpa The North Face Negra</h3>
+        <h4>Talla xs/s</h4>
+        <p>Q200</p>
+        <button onclick="abrirModal('Chumpa The North Face Negra','Q200',
+        ['Imagenes/Sueteres/Chumpa The Nort Face Negra1.jpg','Imagenes/Sueteres/Chumpa The Nort Face Negra2.jpg','Imagenes/Sueteres/Chumpa The Nort Face Negra3.jpg'])">
+          Ver más
+        </button>
+      </div>
+
+
+            <div class="card fade-in">
         <img src="Imagenes/Sueteres/Chumpa Dickies.jpg" alt="chumpa Dickies">
         <h3>Chumpa Dickies</h3>
         <h4>Talla XL</h4>
         <p>Q150</p>
         <button onclick="abrirModal('Chumpa Dickies','Q150',
         ['Imagenes/Sueteres/Chumpa Dickies.jpg','Imagenes/Sueteres/Chumpa Dickies negra2.jpg','Imagenes/Sueteres/Chumpa Dickies negra3.jpg'])">
+          Ver más
+        </button>
+      </div>
+
+                  <div class="card fade-in">
+        <img src="Imagenes/Sueteres/Sueter The North Face Gris-Rojo1.jpg" alt="Sueter The North Face Gris-Rojo">
+        <h3>Sueter The North Face Gris-Rojo</h3>
+        <h4>Talla XL</h4>
+        <p>Q150</p>
+        <button onclick="abrirModal('Sueter The North Face Gris-Rojo','Q150',
+        ['Imagenes/Sueteres/Sueter The North Face Gris-Rojo1.jpg','Imagenes/Sueteres/Sueter The North Face Gris-Rojo2.jpg','Imagenes/Sueteres/Sueter The North Face Gris-Rojo3.jpg'])">
           Ver más
         </button>
       </div>
@@ -165,8 +245,19 @@
     
 
     <!-- PANTS -->
-    <h2>Pants</h2>
+    <h2 id="pants">Pants</h2>
     <div class="grid">
+
+            <div class="card fade-in">
+        <img src="Imagenes/Pants/Pants Old Navy1.jpg">
+        <h3>Pants Old Navy</h3>
+        <h4>Talla M</h4>
+        <p>Q150</p>
+        <button onclick="abrirModal('Pants Old Navy','Q150',
+        ['Imagenes/Pants/Pants Old Navy1.jpg','Imagenes/Pants/Pants Old Navy2.jpg','Imagenes/Pants/Pants Old Navy3.jpg'])">
+          Ver más
+        </button>
+      </div>
 
       <div class="card fade-in">
         <img src="Imagenes/Pants/pants deportivo Al in Motion Negro1.jpg">
@@ -204,13 +295,13 @@
     </div>
 
     <!-- GORRAS -->
-    <h2>Gorras</h2>
+    <h2 id="gorras">Gorras</h2>
     <div class="grid">
 
     </div>
 
     <!-- GORROS (BEANIES) -->
-    <h2>Gorros (Beanies)</h2>
+    <h2 id="gorros">Gorros (Beanies)</h2>
     <div class="grid">
 
       <div class="card fade-in">
@@ -249,7 +340,7 @@
     </div>
 
     <!-- CAMISAS -->
-    <h2>Camisas</h2>
+    <h2 id="camisas">Camisas</h2>
     <div class="grid">
 
       <div class="card fade-in">
@@ -278,7 +369,7 @@
 
 
     <!-- CALCETINES -->
-    <h2>Calcetines</h2>
+    <h2 id="calcetines">Calcetines</h2>
     <div class="grid">
 
       <div class="card fade-in">
