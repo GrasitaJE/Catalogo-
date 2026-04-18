@@ -1,3 +1,4 @@
+
 function comprar(producto) {
   let numero = "50251749515"; // TU NUMERO AQUI
   let mensaje = `Hola, quiero el ${producto}`;
@@ -78,16 +79,23 @@ document.addEventListener('DOMContentLoaded', function() {
   // Hacer tarjetas clickeables
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', function(e) {
-      // No ejecutar si se clickea en el botón directamente
+      // Solo ejecutar si no se clickea directamente en el botón
       if (e.target.tagName === 'BUTTON') return;
       
       const button = this.querySelector('button');
-      if (button && button.onclick) {
+      if (button) {
         const onclickStr = button.getAttribute('onclick');
-        const match = onclickStr.match(/abrirModal\((.+)\)/);
-        if (match) {
-          const argsStr = match[1];
-          eval('abrirModal(' + argsStr + ')');
+        if (onclickStr) {
+          // Usar [\s\S]+ para capturar saltos de línea
+          const match = onclickStr.match(/abrirModal\(([\s\S]+)\)/);
+          if (match) {
+            const argsStr = match[1];
+            try {
+              eval('abrirModal(' + argsStr + ')');
+            } catch(e) {
+              console.error('Error al abrir modal:', e);
+            }
+          }
         }
       }
     });
@@ -95,16 +103,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Cerrar modal al hacer click en el fondo
   const modal = document.getElementById("modal");
-  modal.addEventListener('click', function(event) {
-    if (event.target === this) {
-      cerrarModal();
-    }
-  });
+  if (modal) {
+    modal.addEventListener('click', function(event) {
+      if (event.target === this) {
+        cerrarModal();
+      }
+    });
 
-  // Permitir cerrar con tecla Escape
-  document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-      cerrarModal();
-    }
-  });
+    // Permitir cerrar con tecla Escape
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        cerrarModal();
+      }
+    });
+  }
 });
