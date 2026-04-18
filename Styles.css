@@ -231,3 +231,85 @@ button::before {
     transform: translateY(0);
   }
 }
+
+/* MENÚ HORIZONTAL */
+.menu-horizontal {
+  background: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.menu-horizontal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-horizontal li {
+  display: inline;
+}
+
+.menu-horizontal a {
+  color: #c0c0c0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menu-horizontal a:hover {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+/* SECCIÓN DESTACADA */
+.destacado {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.destacado h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family: 'Cinzel', serif;
+}
+
+.destacado img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+  margin-bottom: 30px;
+}
+
+.botones-comprar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.botones-comprar button {
+  padding: 12px 25px;
+  background: linear-gradient(145deg, #c0c0c0, #7a7a7a);
+  color: black;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.botones-comprar button:hover {
+  transform: scale(1.05);
+}
