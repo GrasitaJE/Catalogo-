@@ -42,6 +42,7 @@ body {
   font-size: 3rem;
   font-family: 'lobster', serif;
   background: linear-gradient(145deg, #ffffff, #888888);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -127,7 +128,7 @@ body {
 /* 1 columna en pantallas pequeñas */
 @media (max-width: 600px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
@@ -144,7 +145,7 @@ body {
 /* TARJETAS */
 .card {
   background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 5px 5px 15px #000;
@@ -160,16 +161,34 @@ body {
 .card img {
   width: 65%;
   border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.card h4 {
+  margin: 3px 0;
+  font-size: 0.85rem;
+  color: #b0b0b0;
+}
+
+.card p {
+  margin: 3px 0 8px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .card button {
-  margin-top: 10px;
-  padding: 8px 20px;
+  margin-top: 8px;
+  padding: 6px 15px;
   border: none;
   background: linear-gradient(145deg, #c0c0c0, #7a7a7a);
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   transition: transform 0.2s;
 }
 
@@ -179,16 +198,32 @@ body {
 
 @media (max-width: 768px) {
   .card {
-    padding: 12px;
+    padding: 8px;
   }
 
   .card img {
-    width: 75%;
+    width: 70%;
+    margin-bottom: 6px;
+  }
+
+  .card h3 {
+    font-size: 0.9rem;
+    margin: 3px 0;
+  }
+
+  .card h4 {
+    font-size: 0.8rem;
+    margin: 2px 0;
+  }
+
+  .card p {
+    margin: 2px 0 6px 0;
+    font-size: 0.85rem;
   }
 
   .card button {
-    padding: 6px 15px;
-    font-size: 0.85rem;
+    padding: 5px 12px;
+    font-size: 0.8rem;
   }
 }
 
