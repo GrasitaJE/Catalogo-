@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // ==========================================
   const modal = document.getElementById("modal");
   const btnCerrar = document.querySelector(".cerrar");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
 
   if (modal && btnCerrar) {
     btnCerrar.addEventListener('click', cerrarModal);
@@ -116,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Navegación interna del modal
-  document.getElementById("prevBtn").onclick = prevImage;
-  document.getElementById("nextBtn").onclick = nextImage;
+  if (prevBtn) prevBtn.onclick = prevImage;
+  if (nextBtn) nextBtn.onclick = nextImage;
 });
 
 // ==========================================
