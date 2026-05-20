@@ -27,9 +27,9 @@ function actualizarImagenesPorTema(tema) {
   const hero = document.querySelector('.hero');
   if (hero) {
     if (tema === 'dark') {
-      hero.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Imagenes/Portada/Fondo3.jpg")';
+      hero.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Portada/Fondo3.jpg")';
     } else {
-      hero.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Imagenes/Portada/Fondo2.jpg")';
+      hero.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Portada/Fondo2.jpg")';
     }
   }
 }
