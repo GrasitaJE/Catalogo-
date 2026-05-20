@@ -28,7 +28,7 @@ function actualizarImagenesPorTema(tema) {
   if (hero) {
     if (tema === 'dark') {
       hero.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Portada/Fondo3.jpg")';
-    } else {
+    } else{
       hero.style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("Portada/Fondo2.jpg")';
     }
   }
